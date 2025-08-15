@@ -11,7 +11,7 @@ module.exports = {
   // Module configuration
   module: {
     rules: [{
-      test: /.js$/, // Chỉ áp dụng cho file .js
+      test: /.\js$/, // Chỉ áp dụng cho file .js
       exclude: /node_modules/, // Loại bỏ thư mục node_modules
       use: {
         loader: 'babel-loader', // Sử dụng babel-loader để biên dịch
