@@ -11,7 +11,7 @@ module.exports = {
   // Module configuration
   module: {
     rules: [{
-      test: /.js$/, // Only applies to .js files (fixed regex)
+      test: /\.js$/, // Only applies to .js files (corrected regex)
       exclude: /node_modules/, // Exclude node_modules directory
       use: {
         loader: 'babel-loader', // Use babel-loader for compilation
