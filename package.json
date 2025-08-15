@@ -21,6 +21,6 @@
     "@babel/preset-react": "^7.14.5"
   },
   "keywords": ["design-system", "web", "react", "frontend"],
-  "author": "Your Name", 
+  "author": "Your Name",
   "license": "ISC"
 }
