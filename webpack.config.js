@@ -11,18 +11,18 @@ module.exports = {
   // Module configuration
   module: {
     rules: [{
-      test: /.\js$/, // Chỉ áp dụng cho file .js
-      exclude: /node_modules/, // Loại bỏ thư mục node_modules
+      test: /.js$/, // Only applies to .js files (fixed regex)
+      exclude: /node_modules/, // Exclude node_modules directory
       use: {
-        loader: 'babel-loader', // Sử dụng babel-loader để biên dịch
+        loader: 'babel-loader', // Use babel-loader for compilation
         options: {
-          presets: ['@babel/preset-env', '@babel/preset-react'] // Tùy chọn cho babel
+          presets: ['@babel/preset-env', '@babel/preset-react'] // Options for babel
         }
       }
     }]
   },
   // Development server configuration
   devServer: {
-    static: './dist', // Thư mục phục vụ tĩnh
+    static: './dist', // Static serving directory
   },
 };
